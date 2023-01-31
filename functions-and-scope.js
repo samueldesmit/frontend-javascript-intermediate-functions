@@ -68,6 +68,17 @@ cumLaude([8, 9, 4, 6, 10])
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
+function averageGrade2 (array) {
+    let grade = 0;
+    for (i = 0; i < array.length; i++) {
+        grade += array[i] / (array.length)
+    }
+    return grade
+}
+
+
+const addUp = averageGrade2(grades)
+console.log (addUp)
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
@@ -77,13 +88,29 @@ cumLaude([8, 9, 4, 6, 10])
 // ---- Verwachte uitkomsten:
 // averageGrade(grades) geeft 6.642857142857143
 // averageGrade([6, 4, 5]) geeft xxxx
-// averageGrade([8, 9, 4, 6, 10]) geeft xxxx
+// averageGrade(grades) geeft xxxx
+
+
+function averageGrade (array) {
+    let grade = 0;
+    for (i = 0; i < array.length; i++) {
+        grade += array[i] / (array.length)
+    }
+    let roundNumber = grade.toFixed(2)
+    console.log (roundNumber)
+    return roundNumber
+}
+
+averageGrade(grades)
+averageGrade([6, 4, 5])
+averageGrade(grades)
 
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
+// zier opdracht 2b
 
 /* Bonusopdracht: hoogste cijfer */
 
