@@ -8,6 +8,7 @@
 // getEmailDomain("n.eeken@novi-education.nl") geeft novi-education.nl
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
+console.log ("------------------ Opdracht 1 -------------------")
 
 function getEmailDomain(emailAdres) {
     const domainName = emailAdres.split("@");
@@ -24,6 +25,7 @@ getEmailDomain("a.wiersma@outlook.com")
 // typeOfEmail("t.mellink@novi.nl") geeft geeft "Medewerker"
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
+console.log ("------------------ Opdracht 2 -------------------")
 
 function typeOfEmail(emailAdres) {
     const domainName = emailAdres.split("@");
@@ -53,6 +55,7 @@ typeOfEmail("a.wiersma@outlook.com")
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+console.log ("------------------ Opdracht 3 -------------------")
 
 function checkEmailValidity (emailAdress) {
     const domainMonkey = emailAdress.indexOf("@");
